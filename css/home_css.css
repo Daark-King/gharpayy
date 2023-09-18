@@ -15,7 +15,7 @@ body {
 	font-family: 'Arial', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	background: #000;
-	color: #999;
+	color: #999999;
 }
 
 
@@ -48,6 +48,27 @@ img {
 	height: 93vh;
 	position: relative;
 	background: url('/assets/home.jpg') no-repeat center center/cover;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animate{
+    0%{
+        background: url(../assets/home1.jpeg);
+    }
+    50%{
+        background: url(../assets/home2.jpg);
+    }
+    100%{
+        background: url(../assets/home3.jpg);
+    }
 }
 
 .showcase::after {
@@ -107,7 +128,7 @@ img {
 
 .showcase-content p {
 	text-transform: uppercase;
-	color: #fff;
+	color: #ffffff;
 	font-weight: 400;
 	font-size: 1.9rem;
 	line-height: 1.25;
@@ -141,7 +162,7 @@ img {
 }
 
 .tabs .container > div:hover {
-	color: #fff;
+	color: #d4dde6;
 	cursor: pointer;
 }
 
